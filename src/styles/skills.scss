@@ -1,0 +1,91 @@
+.skills {
+  padding: 50px 0;
+
+  .database,
+  .tools,
+  .web,
+  .programming {
+    // @include displayCenter(center);
+    flex-direction: column;
+    margin: 20px 0;
+    h2 {
+      color: $primary_color;
+      font-family: $Mulish;
+      font-weight: bold;
+      text-align: left;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    .icon_container {
+      @include displayCenter(center, flex-start);
+      flex-wrap: wrap;
+      width: 100%;
+      .icon_wrapper {
+        @include displayCenter(center, center);
+        min-width: 45px;
+        min-height: 45px;
+        background: $main_bg;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 10px 20px;
+        position: relative;
+        &::before,
+        &::after {
+          border-radius: 50%;
+          background: $neon_background_four;
+        }
+        &::after {
+          background: transparent;
+        }
+        &:hover {
+          .tooltiptext {
+            visibility: visible;
+          }
+          &::before,
+          &::after {
+            background: $neon_background_four;
+          }
+        }
+        .tooltiptext {
+          visibility: hidden;
+          width: 150px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+          position: absolute;
+          z-index: 1;
+          bottom: 115%;
+          left: 50%;
+          // text-transform: uppercase;
+          font-family: $Mulish;
+          transform: translate(-50%);
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+          }
+        }
+
+        .icon {
+          font-size: 26px;
+          color: $primary_color;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+          object-fit: contain;
+          background-color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+}

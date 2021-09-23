@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Zen+Dots&display=swap');
+
+// variables
+$Mulish: 'Mulish', sans-serif;
+$Zen: 'Zen Dots', cursive;
+$box_shadow_one: 0px 0px 4px 2px rgb(14, 209, 223);
+$about_bg: #242831;
+$main_bg: #000000;
+$transition: all 0.3s ease;
+$primary_color: #ffffff;
+$box_shadow_three: 0px 0px 5px 2px rgba(0, 0, 0, 0.342);
+$neon_background_one: linear-gradient(195deg, #e100ff, #060c21, #3700ff);
+$neon_background_one_hover: linear-gradient(195deg, #3700ff, #060c21, #e100ff);
+$neon_background_six: linear-gradient(to right, #00eeff, #ff00ea, #2d6a83);
+$neon_background_seven: linear-gradient(to right, #ff7b00, #ff00ea, #00eeff);
+$neon_background_eight: linear-gradient(to right, #00ffff, #d8dac3, #6f00ff);
+$neon_background_four: linear-gradient(195deg, #e100ff, #00eeff, #3700ff);
+
+$box_shadow_five: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+  rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+// $brand_color: #ff6a96;
+$brand_color: linear-gradient(45deg, #ee1e5d, #e644f5);
+$brand_color_four: linear-gradient(45deg, #f8501c, #ffab1d);
+// $brand_color: linear-gradient(45deg, #149E8E, #42DF90);
+$brand_color_hover: linear-gradient(45deg, #0004fc, #c300ff);
+// $brand_color_hover: linear-gradient(45deg, #fa5293, #f86b64);
+// $brand_color: linear-gradient(45deg, #892168, #FF3B57);
+$brand_color_two: linear-gradient(45deg, #42ffdb, #2bdce3);
+$brand_color_three: linear-gradient(45deg, #c13dff, #f573c3);
+// $brand_color: linear-gradient(45deg, #548AF0, #2DC8ED);
+
+// mixins
+
+@mixin displayCenter($Align, $justify) {
+  display: flex;
+  align-items: $Align;
+  justify-content: $justify;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scrollbar-width: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+  &::-webkit-scrollbar {
+    scrollbar-width: 0;
+  }
+}
+body {
+  font-family: $Mulish;
+  font-weight: 400;
+  background: $about_bg !important;
+}
+
+.arrow_up {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  border-radius: 5px;
+  @include displayCenter(center, center);
+  background-color: $primary_color;
+  cursor: pointer;
+  box-shadow: $box_shadow_three;
+  .icon {
+    color: $main_bg;
+  }
+  &:hover {
+    box-shadow: $box_shadow_one;
+  }
+}
+.hide {
+  display: none;
+}
+
+a {
+  display: inline-block !important;
+  color: $main_bg !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  font-family: $Mulish !important;
+}
+
+.section__title {
+  @include displayCenter(center, center);
+  padding: 30px 0 80px 0;
+  h1 {
+    font-family: $Zen;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 2.2rem;
+    position: relative;
+    color: $primary_color;
+    background: $neon_background_seven;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover {
+      background: $neon_background_six;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 3px;
+      background: $brand_color;
+      border-radius: 33px;
+      bottom: -0.5em;
+    }
+  }
+}
+
+.resume__btn {
+  background: $brand_color_three;
+  color: $primary_color !important;
+  padding: 8px 25px;
+  border-radius: 33px;
+  margin-top: 30px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: $box_shadow_five;
+  }
+}
+
+.icon_wrapper,
+.contact__container,
+.success__message,
+.project_card {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    z-index: -1;
+    background: $neon_background_one;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    z-index: -2;
+    background: $neon_background_one;
+    filter: blur(5px);
+  }
+  &:hover {
+    &::before {
+      background: $neon_background_one_hover;
+    }
+    &::after {
+      background: $neon_background_one_hover;
+    }
+  }
+}

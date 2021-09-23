@@ -1,0 +1,15 @@
+.navbar__ {
+  font-family: $Mulish !important;
+  background: $about_bg;
+  font-weight: 600;
+  .navbar__brnad {
+    color: $primary_color !important;
+    font-family: $Zen !important;
+  }
+  a {
+    color: $primary_color !important;
+  }
+  .navbar-toggler-icon {
+    color: $primary_color !important;
+  }
+}

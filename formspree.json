@@ -1,0 +1,19 @@
+{
+  "forms": {
+    "contactForm": {
+      "name": "Contact Form",
+      "fields": {
+        "fullName": {"type": "text", "required": true},
+        "email": {"type": "email", "required": true},
+        "phoneNumber": {"type": "numeric", "required": true},
+        "message": {"type": "text", "required": true}
+      },
+      "actions": [
+        {
+          "type": "email",
+          "to": "shirisha.gujjari0425@gmail.com"
+        }
+      ]
+    }
+  }
+}

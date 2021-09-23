@@ -1,0 +1,40 @@
+.about {
+  padding: 50px 0;
+  .about__left {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    h1 {
+      font-family: $Zen;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+    h3 {
+      font-family: $Zen;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      margin: 15px 0;
+    }
+    p {
+      text-align: justify;
+      line-height: 28px;
+      text-transform: capitalize;
+    }
+  }
+  .about__right {
+    @include displayCenter(center, center);
+    height: 100%;
+    .img__ {
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      overflow: hidden;
+      width: 350px;
+      height: 350px;
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: contain;
+      }
+    }
+  }
+}

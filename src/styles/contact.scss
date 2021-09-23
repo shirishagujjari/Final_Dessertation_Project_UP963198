@@ -1,0 +1,237 @@
+.contact__container {
+  background: $about_bg;
+  border-radius: 10px;
+
+  &::before {
+    border-radius: 10px;
+    background: $neon_background_four !important;
+  }
+  &::after {
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    border-radius: 10px;
+    background: $neon_background_four !important;
+  }
+}
+.contact {
+  color: $primary_color;
+  padding: 50px 0;
+
+  h2 {
+    font-family: $Mulish;
+    font-weight: 500;
+  }
+
+  .contact__left {
+    width: 100%;
+    height: 100%;
+    @include displayCenter(center, space-between);
+    flex-direction: column;
+    padding: 15px 0;
+
+    .links {
+      @include displayCenter(center, center);
+      flex-direction: column;
+      //   width: 100%;
+
+      .add {
+        @include displayCenter(flex-start, flex-start);
+        width: 100%;
+        margin-bottom: 20px;
+        a {
+          color: $primary_color !important;
+        }
+
+        .icon {
+          margin-top: 4px;
+          font-size: 22px;
+          margin-right: 15px !important;
+        }
+        .gmail {
+          color: red;
+        }
+      }
+    }
+  }
+  .contact__right {
+    @include displayCenter(center, center);
+    flex-direction: column;
+    padding: 15px 0;
+
+    form {
+      padding: 15px 0;
+      max-width: 310px;
+      .form_control {
+        margin-bottom: 5px;
+      }
+      .warning {
+        color: red !important;
+      }
+      .error {
+        color: red;
+        max-width: 310px;
+        min-width: 100%;
+        margin-top: -12px;
+        text-align: right;
+        font-size: x-small;
+      }
+      input,
+      textarea {
+        border: 1px solid rgb(210, 210, 214);
+        font-size: 1em;
+        color: $primary_color;
+        padding: 0.5em 1em;
+        min-width: 100%;
+        border-radius: 5px;
+        background-color: transparent;
+        outline: 0;
+        margin: 5px 0 15px 0;
+
+        &::placeholder {
+          font-size: 0.7em;
+          opacity: 0.6;
+        }
+      }
+      .hire_btn {
+        display: block;
+        border: 0;
+        width: 100%;
+        outline: none;
+        padding: 0.4em 1em;
+        text-align: center;
+        border-radius: 5px;
+        color: $primary_color;
+        font-family: $Mulish;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background: $brand_color_hover;
+        &:hover {
+          background: $brand_color;
+        }
+        .hire_btn_icon {
+          margin: -5px 0 0 5px;
+          font-size: 1.4rem;
+        }
+      }
+      .hire_btn_disabled {
+        cursor: not-allowed;
+        background: $brand_color_four !important;
+        display: block;
+        border: 0;
+        width: 100%;
+        outline: none;
+        padding: 0.4em 1em;
+        text-align: center;
+        border-radius: 5px;
+        color: $primary_color;
+        .spinner {
+          margin-top: -5px;
+          font-size: 1.4rem;
+          animation: spinner linear 1s infinite;
+        }
+        @keyframes spinner {
+          0% {
+            transform: rotate(0deg);
+          }
+          25% {
+            transform: rotate(90deg);
+          }
+          50% {
+            transform: rotate(180deg);
+          }
+          75% {
+            transform: rotate(240deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+}
+// alerts
+.swal-overlay {
+  background-color: rgba(0, 35, 99, 0.5);
+}
+.swal-modal {
+  background: transparent;
+}
+
+.success__message {
+  background: rgb(0, 0, 0) !important;
+  padding: 50px 20px;
+  .ic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid rgb(111, 229, 238);
+    @include displayCenter(center, center);
+    margin: auto;
+    margin-bottom: 30px;
+    .ii {
+      color: $primary_color;
+      font-size: 30px;
+    }
+  }
+  p {
+    font-size: 17px;
+    font-family: $Mulish;
+  }
+  h1 {
+    font-size: 30px;
+    font-family: $Mulish;
+  }
+  h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: $Mulish;
+  }
+  h1,
+  h5 {
+    background: $neon_background_eight;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover {
+      background: $neon_background_seven;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  p {
+    background: $neon_background_seven;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover {
+      background: $neon_background_six;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &::after,
+  &::before {
+    background: linear-gradient(155deg, #e100ff, #00eeff, #2f00ff) !important;
+  }
+  &::after {
+    filter: blur(100);
+    top: -1px;
+    right: -1px;
+    left: -1px;
+    bottom: -1px;
+  }
+
+  &:hover {
+    &::after,
+    &::before {
+      background: linear-gradient(
+        to right,
+        #fffb00,
+        #ff00ea,
+        #00eeff
+      ) !important;
+    }
+  }
+}

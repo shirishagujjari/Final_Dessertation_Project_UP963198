@@ -1,0 +1,14 @@
+// footer
+.footer {
+  padding: 20px 10px;
+  text-align: center;
+  text-transform: capitalize;
+  background: $brand_color;
+  font-family: $Mulish;
+  @include displayCenter(center, center);
+  position: relative;
+  h4 {
+    font-size: 15px;
+    color: $primary_color;
+  }
+}

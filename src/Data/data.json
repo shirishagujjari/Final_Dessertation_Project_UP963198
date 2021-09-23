@@ -1,0 +1,79 @@
+{
+  "personalInfo": {
+    "fullName": "Shirisha Gujjari",
+    "shortBio": "",
+    "fullBio": " The Software Developer Based In Preston, UK. I'm Graduated In Masters In Information Systems. I am Having The Professional Experience In IT Industries With Comprehensive Knowledge In Software Analysis, Design And Development Of Business Applications, Web Applications And Product Development In JAVA/J2EE Technologies.",
+
+    "email": "shirisha.gujjari0425@gmail.com",
+    "phoneNumber": "+44 7438574758",
+    "address": "Mersey Street, Ashton-on-Ribble, Preston, United Kingdom.",
+    "caption": "I'm Shirisha Gujjari",
+    "description": "Full Stack Developer with 6+ years of hands-on experience in designing, developing, and implementing applications and solutions using a range of technologies and programming languages. Seeing to leverage broad development experience and hands-on technical expertise in a challenging role as a Full-Stack Developer.",
+    "designation1": "Software Developer",    
+    "designation2": "FullStack Developer"
+  },
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/sirisha.appam/",
+    "github": "",
+    "twitter": "#",
+    "instagram": "https://www.instagram.com/sirishagujjari/",
+    "codePen": "",
+    "youtube": "",
+    "hackerRank": "",
+    "linkedIn": "https://www.linkedin.com/feed/"
+  },
+  "projects": [
+    {
+      "projectID": 1,
+      "projectName": "React JS App",
+      "projectImage": "https://brainhub.eu/blog/wp-content/uploads/2019/04/why-react-js.png",
+      "projectDescription": "React (also known as React.js) is one of the most popular JavaScript front end development libraries.",
+      "projectLinks": {
+        "github": "https://github.com/shirishagujjari/reactjs-example",        
+        "previewURL": "https://github.com/shirishagujjari/reactjs-example"
+      },
+      "projectTechStack": {
+        "react": "react"
+      }
+    },
+    {
+      "projectID": 1,
+      "projectName": "Spring Security application",
+      "projectImage": "https://cdn.journaldev.com/wp-content/uploads/2014/04/spring-security.jpg",
+      "projectDescription": "Spring Security is a security framework that secures J2EE-based enterprise applications, by providing powerful, customizable security features like authentication and authorization.",
+      "projectLinks": {
+        "github": "https://github.com/shirishagujjari/Spring-Security",
+        "previewURL": "https://github.com/shirishagujjari/Spring-Security"
+      },
+      "projectTechStack": {
+        "react": "react"
+      }
+    },
+    {
+      "projectID": 1,
+      "projectName": "React JS",
+      "projectImage": "https://www.goodworklabs.com/wp-content/uploads/2016/10/reactjs.png",
+      "projectDescription": "React (also known as React.js) is one of the most popular JavaScript front end development libraries.",
+      "projectLinks": {
+        "github": "https://github.com/shirishagujjari/reactJs",
+        "previewURL": "https://github.com/shirishagujjari/reactJs"
+      },
+      "projectTechStack": {
+        "react": "react"
+      }
+    },
+    {
+      "projectID": 1,
+      "projectName": "SpringBoot and Hibernate Example",
+      "projectImage": "https://i0.wp.com/keyholesoftware.com/wp-content/uploads/Spring-Boot.png?fit=700%2C400&ssl=1",
+      "projectDescription": "Java Spring Boot (Spring Boot) is a tool that makes developing web application and microservices with Spring Framework faster and easier through three core capabilities",
+      "projectLinks": {
+        "github": "https://github.com/shirishagujjari/SpringBoot-Hibernate",
+        "previewURL": "https://github.com/shirishagujjari/SpringBoot-Hibernate"
+      },
+      "projectTechStack": {
+        "react": "react"
+      }
+    }
+  ]
+}
