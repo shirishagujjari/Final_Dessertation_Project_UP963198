@@ -8,7 +8,7 @@ import { FormspreeProvider } from "@formspree/react";
 import AuthContext from "./Context";
 ReactDOM.render(
   <React.StrictMode>
-    <FormspreeProvider project="1659968672212451063">
+    <FormspreeProvider project="1700618209922645019">
       <AuthContext>
         <App />
       </AuthContext>
